@@ -39,8 +39,7 @@
 
     - name: Update apt and install docker-ce
       apt:
-        name: docker-ce
-        state: latest
+        name: docker-ce=5:20.10.24~3-0~ubuntu-focal
         update_cache: true
 
     - name: Install Docker Module for Python

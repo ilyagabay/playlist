@@ -1,0 +1,12 @@
+---
+- name: Add user iliaga to groups
+  hosts: all
+  become: yes
+
+  tasks:
+    - name: Add iliaga to sudo group
+      command: usermod -aG sudo iliaga
+
+    - name: Add iliaga to docker group
+      command: usermod -aG docker iliaga
+

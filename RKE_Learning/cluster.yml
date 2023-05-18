@@ -8,7 +8,7 @@ nodes:
   - controlplane
   - etcd
   hostname_override: ""
-  user: ubuntu
+  user: iliaga
   docker_socket: /var/run/docker.sock
   ssh_key: ""
   ssh_key_path: ~/.ssh/id_rsa
@@ -23,7 +23,7 @@ nodes:
   - controlplane
   - etcd
   hostname_override: ""
-  user: ubuntu
+  user: iliaga
   docker_socket: /var/run/docker.sock
   ssh_key: ""
   ssh_key_path: ~/.ssh/id_rsa
@@ -38,7 +38,7 @@ nodes:
   - controlplane
   - etcd
   hostname_override: ""
-  user: ubuntu
+  user: iliaga
   docker_socket: /var/run/docker.sock
   ssh_key: ""
   ssh_key_path: ~/.ssh/id_rsa
@@ -52,7 +52,7 @@ nodes:
   role:
   - worker
   hostname_override: ""
-  user: ubuntu
+  user: iliaga
   docker_socket: /var/run/docker.sock
   ssh_key: ""
   ssh_key_path: ~/.ssh/id_rsa
@@ -66,7 +66,7 @@ nodes:
   role:
   - worker
   hostname_override: ""
-  user: ubuntu
+  user: iliaga
   docker_socket: /var/run/docker.sock
   ssh_key: ""
   ssh_key_path: ~/.ssh/id_rsa
@@ -80,7 +80,7 @@ nodes:
   role:
   - worker
   hostname_override: ""
-  user: ubuntu
+  user: iliaga
   docker_socket: /var/run/docker.sock
   ssh_key: ""
   ssh_key_path: ~/.ssh/id_rsa
