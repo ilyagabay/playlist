@@ -1,0 +1,11 @@
+---
+- name: Uninstall nfs-common
+  hosts: your_group_name
+  become: true
+
+  tasks:
+    - name: Remove nfs-common package
+      package:
+        name: nfs-common
+        state: absent
+

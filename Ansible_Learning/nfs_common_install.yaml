@@ -1,0 +1,17 @@
+---
+- name: Install nfs-common on Ubuntu 22.04
+  hosts: all
+  become: true
+
+  tasks:
+    - name: Update apt cache
+      apt:
+        update_cache: yes
+      when: ansible_distribution == "Ubuntu" and ansible_distribution_version == "22.04"
+
+    - name: Install nfs-common package
+      package:
+        name: nfs-common
+        state: present
+      when: ansible_distribution == "Ubuntu" and ansible_distribution_version == "22.04"
+
