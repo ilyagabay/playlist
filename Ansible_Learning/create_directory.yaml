@@ -1,0 +1,11 @@
+---
+- name: Create directory path
+  hosts: all
+  become: true
+
+  tasks:
+    - name: Create directory
+      file:
+        path: /mnt/nfs_clientshare
+        state: directory
+
