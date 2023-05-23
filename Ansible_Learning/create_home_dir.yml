@@ -2,10 +2,10 @@
 - name: Create directory path
   hosts: all
   become: true
-
   tasks:
-    - name: Create directory
+    - name: Create /nfs/home directory
       file:
-        path: /nfs/general
+        path: /nfs/home
         state: directory
+        mode: "0755"
 
