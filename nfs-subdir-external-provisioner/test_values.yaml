@@ -1,0 +1,21 @@
+nfs:
+  server: 192.168.56.116
+  path: /nfs-storage
+  mountOptions:
+  volumeName: nfs-subdir-external-provisioner-root
+  reclaimPolicy: Retain
+
+storageClass:
+  create: true
+
+  defaultClass: true
+
+  accessModes: ReadOnlyMany
+
+resources:
+  limits:
+    cpu: 100m
+    memory: 128Mi
+  requests:
+    cpu: 100m
+    memory: 128Mi
