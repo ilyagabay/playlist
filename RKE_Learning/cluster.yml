@@ -7,6 +7,7 @@ nodes:
   role:
   - controlplane
   - etcd
+  - worker
   hostname_override: ""
   user: iliaga
   docker_socket: /var/run/docker.sock
@@ -22,6 +23,7 @@ nodes:
   role:
   - controlplane
   - etcd
+  - worker
   hostname_override: ""
   user: iliaga
   docker_socket: /var/run/docker.sock
@@ -37,47 +39,6 @@ nodes:
   role:
   - controlplane
   - etcd
-  hostname_override: ""
-  user: iliaga
-  docker_socket: /var/run/docker.sock
-  ssh_key: ""
-  ssh_key_path: ~/.ssh/id_rsa
-  ssh_cert: ""
-  ssh_cert_path: ""
-  labels: {}
-  taints: []
-- address: 192.168.56.112
-  port: "22"
-  internal_address: ""
-  role:
-  - worker
-  hostname_override: ""
-  user: iliaga
-  docker_socket: /var/run/docker.sock
-  ssh_key: ""
-  ssh_key_path: ~/.ssh/id_rsa
-  ssh_cert: ""
-  ssh_cert_path: ""
-  labels: {}
-  taints: []
-- address: 192.168.56.111
-  port: "22"
-  internal_address: ""
-  role:
-  - worker
-  hostname_override: ""
-  user: iliaga
-  docker_socket: /var/run/docker.sock
-  ssh_key: ""
-  ssh_key_path: ~/.ssh/id_rsa
-  ssh_cert: ""
-  ssh_cert_path: ""
-  labels: {}
-  taints: []
-- address: 192.168.56.110
-  port: "22"
-  internal_address: ""
-  role:
   - worker
   hostname_override: ""
   user: iliaga
