@@ -1,7 +1,7 @@
 # If you intended to deploy Kubernetes in an air-gapped environment,
 # please consult the documentation on how to configure custom RKE images.
 nodes:
-- address: 192.168.56.108
+- address: 192.168.56.117
   port: "22"
   internal_address: ""
   role:
@@ -17,7 +17,7 @@ nodes:
   ssh_cert_path: ""
   labels: {}
   taints: []
-- address: 192.168.56.107
+- address: 192.168.56.118
   port: "22"
   internal_address: ""
   role:
@@ -33,7 +33,7 @@ nodes:
   ssh_cert_path: ""
   labels: {}
   taints: []
-- address: 192.168.56.115
+- address: 192.168.56.119
   port: "22"
   internal_address: ""
   role:
@@ -202,7 +202,7 @@ enable_cri_dockerd: null
 kubernetes_version: ""
 private_registries: []
 ingress:
-  provider: ""
+  provider: "none"
   options: {}
   node_selector: {}
   extra_args: {}
