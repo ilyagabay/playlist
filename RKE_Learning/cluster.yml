@@ -3,11 +3,11 @@
 nodes:
 - address: 192.168.56.117
   port: "22"
-  internal_address: ""
+  internal_address: "192.168.56.117"
   role:
   - controlplane
-  - etcd
   - worker
+  - etcd
   hostname_override: ""
   user: iliaga
   docker_socket: /var/run/docker.sock
@@ -19,11 +19,11 @@ nodes:
   taints: []
 - address: 192.168.56.118
   port: "22"
-  internal_address: ""
+  internal_address: "192.168.56.118"
   role:
   - controlplane
-  - etcd
   - worker
+  - etcd
   hostname_override: ""
   user: iliaga
   docker_socket: /var/run/docker.sock
@@ -35,11 +35,11 @@ nodes:
   taints: []
 - address: 192.168.56.119
   port: "22"
-  internal_address: ""
+  internal_address: "192.168.56.119"
   role:
   - controlplane
-  - etcd
   - worker
+  - etcd
   hostname_override: ""
   user: iliaga
   docker_socket: /var/run/docker.sock
