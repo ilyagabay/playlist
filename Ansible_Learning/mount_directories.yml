@@ -3,7 +3,7 @@
   hosts: all
   become: true
   vars:
-    host_ip: "192.168.56.116"  # Replace with the appropriate host IP
+    host_ip: "192.168.56.120"  # Replace with the appropriate host IP
 
   tasks:
     - name: Mount /var/nfs/general directory
