@@ -1,8 +1,8 @@
 nfs:
-  server: 192.168.56.116
-  path: /nfs-storage
+  server: 192.168.56.120
+  path: /var/nfs/general
   mountOptions:
-  volumeName: nfs-subdir-external-provisioner-root
+  volumeName: nfs-subdir-provisioner
   reclaimPolicy: Retain
 
 storageClass:
