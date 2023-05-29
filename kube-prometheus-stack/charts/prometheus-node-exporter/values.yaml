@@ -11,8 +11,6 @@ image:
 
 imagePullSecrets: []
 # - name: "image-pull-secret"
-nameOverride: ""
-fullnameOverride: ""
 
 global:
   # To help compatibility with other charts which use global.imagePullSecrets.
@@ -266,8 +264,7 @@ securityContext:
   runAsNonRoot: true
   runAsUser: 65534
 
-containerSecurityContext:
-  readOnlyRootFilesystem: true
+containerSecurityContext: {}
   # capabilities:
   #   add:
   #   - SYS_TIME
