@@ -137,7 +137,7 @@ services:
     win_extra_binds: []
     win_extra_env: []
 network:
-  plugin: none
+  plugin: "none"
   options: {}
   mtu: 0
   node_selector: {}
