@@ -145,7 +145,7 @@ ingress:
   hosts:
     - host: kibana-example.local
       paths:
-        - path: /kibana
+        - path: /
   #tls: []
   #  - secretName: chart-example-tls
   #    hosts:
