@@ -32,7 +32,7 @@ allInOne:
   #     }
   #   }
   service:
-    headless: true
+    headless: false
   ingress:
     enabled: false
     # For Kubernetes >= 1.18 you should specify the ingress-controller via the field ingressClassName
