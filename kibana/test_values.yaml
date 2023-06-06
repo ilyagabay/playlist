@@ -57,7 +57,7 @@ resources:
     cpu: "1000m"
     memory: "2Gi"
 
-protocol: http
+protocol: https
 
 serverHost: "0.0.0.0"
 
@@ -136,7 +136,7 @@ service:
   httpPortName: http
 
 ingress:
-  enabled: true
+  enabled: false
   className: "nginx"
   pathtype: ImplementationSpecific
   annotations: {}
