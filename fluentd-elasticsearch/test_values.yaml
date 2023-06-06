@@ -51,7 +51,7 @@ elasticsearch:
   # If setOutputHostEnvVar is false the hosts value is ignored
   # If you are configuring an AWS signing sidecar, hosts should be the network
   # address of the sidecar, like "localhost:8080"
-  hosts: ["elasticsearch-client:9200"]
+  hosts: ["elasticsearch-master:9200"]
   indexName: "fluentd"
   logstash:
     enabled: true
