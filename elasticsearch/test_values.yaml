@@ -260,7 +260,7 @@ ingress:
   className: "nginx"
   pathtype: ImplementationSpecific
   hosts:
-    - host: chart-example.local
+    - host: test.local
       paths:
         - path: /elastic
   tls: []
