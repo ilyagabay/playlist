@@ -311,8 +311,8 @@ spec:
               fieldRef:
                 fieldPath: metadata.name
           {{- if has "master" .Values.roles }}
-          - name: cluster.initial_master_nodes
-            value: "{{ template "elasticsearch.endpoints" . }}"
+          #- name: cluster.initial_master_nodes
+            #value: "{{ template "elasticsearch.endpoints" . }}"
           {{- end }}
           {{- if gt (len (include "elasticsearch.roles" .)) 0 }}
           - name: node.roles
