@@ -28,11 +28,18 @@ esMajorVersion: ""
 
 # Allows you to add any config files in /usr/share/elasticsearch/config/
 # such as elasticsearch.yml and log4j2.properties
-esConfig:
-  elasticsearch.yml: 
-    discovery:
-      type: single-node
-      seed_hosts: ""
+esConfig: {}
+elasticsearch.yml: |
+node.local:  true # disable network
+cluster.initial_master_nodes:
+- elasticsearch-master-0
+
+
+
+#    key:
+#      nestedkey: value
+#  log4j2.properties: |
+#    key = value
 
 createCert: true
 
@@ -238,7 +245,7 @@ readinessProbe:
   timeoutSeconds: 5
 
 # https://www.elastic.co/guide/en/elasticsearch/reference/current/cluster-health.html#request-params wait_for_status
-clusterHealthCheckParams: "wait_for_status=yellow&timeout=1s"
+clusterHealthCheckParams: "wait_for_status=yellow&timeout=2s"
 
 ## Use an alternate scheduler.
 ## ref: https://kubernetes.io/docs/tasks/administer-cluster/configure-multiple-schedulers/
@@ -252,7 +259,7 @@ tolerations: []
 # Enabling this will publicly expose your Elasticsearch instance.
 # Only enable this if you have security enabled on your cluster
 ingress:
-  enabled: false
+  enabled: true
   annotations: {}
   # kubernetes.io/ingress.class: nginx
   # kubernetes.io/tls-acme: "true"
